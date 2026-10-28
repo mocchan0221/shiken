@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+# 名前は Shiken (四見)。PyPI の mekiki は別のライブラリが使用済みだったため改名した (2026-10-29)
+name = "shiken"
+version = "0.1.0.dev0"
+description = "埋め込みモデルで画像・音・文をスコアリングし、2 択の回答でパーソナライズするライブラリ"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+# EmbeddingGemma 2 で埋め込みベクトルも計算する
+eg2 = [
+    "torch>=2.8",
+    "transformers>=4.57",
+    "sentence-transformers>=6.1",
+    "pillow>=10",
+    "pillow-heif",
+    "librosa",
+    "soundfile",
+    "av",
+    "huggingface_hub",
+]
+dev = ["pytest>=8"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/shiken"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["eg2: EmbeddingGemma 2 を使うテスト (モデルの取得が要る。pytest -m eg2 で回す)"]
+addopts = "-m 'not eg2'"

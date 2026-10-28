@@ -1,0 +1,9 @@
+{
+  "name": "shiken",
+  "version": "0.1.0-dev",
+  "description": "埋め込みモデルのスコアリングを、2 択の回答でパーソナライズする (ブラウザ版)",
+  "type": "module",
+  "main": "shiken.js",
+  "license": "Apache-2.0",
+  "private": true
+}

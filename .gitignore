@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+dist/
+build/
+node_modules/
+.cache/
+# デモの書き出し (python demo/build.py)。公開するときに画像を決めてから入れる
+demo/data/
+demo/thumbs/
+demo/audio/
+demo/shiken.js
+demo/sets.json
+# デモで保存した個人ファイル (持ち主の回答。git に入れない)
+/shiken-*.json
+/mekiki-*.json
+# デモの公開用に集めたもの (python demo/deploy.py)
+/dist/

@@ -1,0 +1,32 @@
+{
+  "sets": [
+    {
+      "id": "food",
+      "label": "生成した料理",
+      "note": "画像生成モデルで作った料理の写真",
+      "folder": "images/food",
+      "kind": "image",
+      "concepts": "food",
+      "questions": [
+        {
+          "id": "tasty",
+          "label": "美味しそう",
+          "prompt": "どっちが美味しそう？",
+          "question": {"type": "score", "levels": [[1, "全然美味しくなさそうな料理の写真"], [5, "最高に美味しそうな料理の写真"]]}
+        },
+        {
+          "id": "spicy",
+          "label": "辛そう",
+          "prompt": "どっちが辛そう？",
+          "question": {"type": "score", "levels": [[1, "辛さのない優しい味の料理の写真"], [5, "唐辛子やラー油がたっぷり入った激辛料理の写真"]]}
+        },
+        {
+          "id": "healthy",
+          "label": "ヘルシー",
+          "prompt": "どっちがヘルシーそう？",
+          "question": {"type": "score", "levels": [[1, "高カロリーで体に悪そうな料理の写真"], [5, "ヘルシーで体に良さそうな料理の写真"]]}
+        }
+      ]
+    }
+  ]
+}
