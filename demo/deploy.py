@@ -46,7 +46,6 @@ HEADERS = """/*
   Referrer-Policy: no-referrer
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()
   Cross-Origin-Opener-Policy: same-origin
-  X-Robots-Tag: noindex, nofollow
 /data/*
   Cache-Control: no-cache
 """
