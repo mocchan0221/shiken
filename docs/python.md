@@ -1,5 +1,7 @@
 # Python で使う
 
+日本語 | [English](en/python.md)
+
 ## インストール
 
 ```bash

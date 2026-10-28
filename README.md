@@ -1,5 +1,7 @@
 # Shiken（四見）
 
+日本語 | [English](README.en.md)
+
 ![2 択に答えるたびに、料理の並びが自分の「美味しそう」に入れ替わっていく](docs/images/readme-image.gif)
 
 ブラウザで動くデモはこちら

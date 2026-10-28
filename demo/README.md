@@ -1,5 +1,7 @@
 # デモ
 
+日本語 | [English](README.en.md)
+
 ブラウザで開くだけで、2 択に答えて価値尺度が自分に合っていく様子を試せるページです。Python も GPU も要りません。回答はどこにも送られません。
 
 試験公開中: https://shiken.mocchan.net/ （`https://shiken-demo.pages.dev/` でも開けます。検索には載せていません）

@@ -1,5 +1,7 @@
 # 開発
 
+日本語 | [English](en/development.md)
+
 ## リポジトリの構成
 
 | パス | 中身 |
